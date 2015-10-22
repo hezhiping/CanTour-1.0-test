@@ -15,6 +15,11 @@
 		0404EDED1BD4DE8600801A82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404EDEC1BD4DE8600801A82 /* Images.xcassets */; };
 		0404EDF01BD4DE8600801A82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0404EDEE1BD4DE8600801A82 /* LaunchScreen.xib */; };
 		0404EDFC1BD4DE8600801A82 /* CanTourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDFB1BD4DE8600801A82 /* CanTourTests.m */; };
+		0483B2261BD61D2B005B564F /* PictureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0483B2251BD61D2B005B564F /* PictureTableViewCell.m */; };
+		0483B2291BD61D64005B564F /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0483B2281BD61D64005B564F /* Picture.m */; };
+		0483B22B1BD61F27005B564F /* PIcture.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0483B22A1BD61F27005B564F /* PIcture.plist */; };
+		049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D7BA41BD4EA6E0040C143 /* MainViewController.m */; };
+		04C297981BD5E33B006E67EC /* pictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C297971BD5E33B006E67EC /* pictureCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,14 @@
 		0404EDF51BD4DE8600801A82 /* CanTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0404EDFA1BD4DE8600801A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0404EDFB1BD4DE8600801A82 /* CanTourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanTourTests.m; sourceTree = "<group>"; };
+		0483B2241BD61D2B005B564F /* PictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureTableViewCell.h; sourceTree = "<group>"; };
+		0483B2251BD61D2B005B564F /* PictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureTableViewCell.m; sourceTree = "<group>"; };
+		0483B2271BD61D64005B564F /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		0483B2281BD61D64005B564F /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		0483B22A1BD61F27005B564F /* PIcture.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PIcture.plist; sourceTree = "<group>"; };
+		049D7BA31BD4EA6E0040C143 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "MainViewController（首页）/MainViewController.h"; sourceTree = "<group>"; };
+		049D7BA41BD4EA6E0040C143 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "MainViewController（首页）/MainViewController.m"; sourceTree = "<group>"; };
+		04C297971BD5E33B006E67EC /* pictureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pictureCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +96,12 @@
 		0404EDDB1BD4DE8500801A82 /* CanTour */ = {
 			isa = PBXGroup;
 			children = (
-				0404EDE01BD4DE8500801A82 /* AppDelegate.h */,
-				0404EDE11BD4DE8500801A82 /* AppDelegate.m */,
+				049D7BA61BD4EAA40040C143 /* 其他 */,
 				0404EDE61BD4DE8500801A82 /* ViewController.h */,
 				0404EDE71BD4DE8500801A82 /* ViewController.m */,
 				0404EDE91BD4DE8500801A82 /* Main.storyboard */,
+				0404EE081BD4E88800801A82 /* MainViewController（首页） */,
 				0404EDEC1BD4DE8600801A82 /* Images.xcassets */,
-				0404EDEE1BD4DE8600801A82 /* LaunchScreen.xib */,
-				0404EDE31BD4DE8500801A82 /* CanTour.xcdatamodeld */,
 				0404EDDC1BD4DE8500801A82 /* Supporting Files */,
 			);
 			path = CanTour;
@@ -120,6 +131,32 @@
 				0404EDFA1BD4DE8600801A82 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0404EE081BD4E88800801A82 /* MainViewController（首页） */ = {
+			isa = PBXGroup;
+			children = (
+				0483B22A1BD61F27005B564F /* PIcture.plist */,
+				0483B2271BD61D64005B564F /* Picture.h */,
+				0483B2281BD61D64005B564F /* Picture.m */,
+				0483B2241BD61D2B005B564F /* PictureTableViewCell.h */,
+				0483B2251BD61D2B005B564F /* PictureTableViewCell.m */,
+				04C297971BD5E33B006E67EC /* pictureCell.xib */,
+				049D7BA31BD4EA6E0040C143 /* MainViewController.h */,
+				049D7BA41BD4EA6E0040C143 /* MainViewController.m */,
+			);
+			name = "MainViewController（首页）";
+			sourceTree = "<group>";
+		};
+		049D7BA61BD4EAA40040C143 /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				0404EDEE1BD4DE8600801A82 /* LaunchScreen.xib */,
+				0404EDE31BD4DE8500801A82 /* CanTour.xcdatamodeld */,
+				0404EDE11BD4DE8500801A82 /* AppDelegate.m */,
+				0404EDE01BD4DE8500801A82 /* AppDelegate.h */,
+			);
+			name = "其他";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C297981BD5E33B006E67EC /* pictureCell.xib in Resources */,
 				0404EDEB1BD4DE8500801A82 /* Main.storyboard in Resources */,
 				0404EDF01BD4DE8600801A82 /* LaunchScreen.xib in Resources */,
+				0483B22B1BD61F27005B564F /* PIcture.plist in Resources */,
 				0404EDED1BD4DE8600801A82 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,9 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0483B2261BD61D2B005B564F /* PictureTableViewCell.m in Sources */,
+				0483B2291BD61D64005B564F /* Picture.m in Sources */,
 				0404EDE21BD4DE8500801A82 /* AppDelegate.m in Sources */,
 				0404EDE51BD4DE8500801A82 /* CanTour.xcdatamodeld in Sources */,
 				0404EDE81BD4DE8500801A82 /* ViewController.m in Sources */,
+				049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */,
 				0404EDDF1BD4DE8500801A82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CanTour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CanTour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -420,6 +464,7 @@
 				0404EE011BD4DE8600801A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0404EE021BD4DE8600801A82 /* Build configuration list for PBXNativeTarget "CanTourTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +473,7 @@
 				0404EE041BD4DE8600801A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
