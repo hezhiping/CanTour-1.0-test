@@ -8,13 +8,12 @@
 
 #define HZPImageCount 4
 #import "MainViewController.h"
-#import "Picture.h"
-#import "PictureTableViewCell.h"
+
 
 @interface MainViewController () <UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView; // 上下滑动的ScrollView
-@property (weak, nonatomic) IBOutlet UITableView *lastTableView;   // 后面的s
+
 
 @property (weak, nonatomic) IBOutlet UIScrollView *pictureScrollView; // 轮播图ScrollView
 
@@ -32,21 +31,15 @@
     [super viewDidLoad];
     
     self.pictureScrollView.delegate=self;
-    self.lastTableView.delegate=self;
-    self.lastTableView.dataSource=self;
     
     //设置scrollView的大小
-    CGFloat contentH=CGRectGetMaxY(self.lastTableView.frame);
-    self.mainScrollView.contentSize=CGSizeMake(0, contentH);
+   // CGFloat contentH=CGRectGetMaxY(self.lastTableView.frame);
+    self.mainScrollView.contentSize=CGSizeMake(0, 1800);
     
     self.mainScrollView.contentInset=UIEdgeInsetsMake(68, 0, 0, 0);
     self.mainScrollView.contentOffset=CGPointMake(0, -68);
     [self pictureChange];
     
-    //tableview的布局设置
-    self.lastTableView.userInteractionEnabled=NO;
-    self.lastTableView.rowHeight=122;
-    self.lastTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     
 }
 
@@ -142,65 +135,5 @@
     [self addTimer];
 }
 
-
-#pragma mark - 数据的懒加载
-- (NSMutableArray *) pictureArray
-{
-    if (_pictureArray==nil) {
-        NSString *path=[[NSBundle mainBundle]pathForResource:@"PIcture.plist" ofType:nil];
-        
-        NSArray *dicArray=[NSArray arrayWithContentsOfFile:path];
-        
-        NSMutableArray *picArray=[NSMutableArray array];
-        
-        for (NSDictionary *dict in dicArray) {
-            
-            Picture *pic=[Picture pictureWithDic:dict];
-            [picArray addObject:pic];
-        }
-        _pictureArray=picArray;
-       
-    }
-    return _pictureArray;
-}
-
-#pragma mark - tableviewDelegate
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 3;
-}
-
-// 设置section的标题
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    if (section==0) {
-        return @"景区";
-    } else if(section==1){
-    
-        return @"美食";
-    }
-    return @"酒店";
-}
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    CGFloat footH=10;
-    return footH;
-
-}
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.pictureArray.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    PictureTableViewCell *cell=[PictureTableViewCell cellWithTableView:tableView];
-    
-    cell.picture=self.pictureArray[indexPath.row];
-    return cell;
-}
 
 @end
