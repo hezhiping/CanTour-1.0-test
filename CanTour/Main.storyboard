@@ -58,6 +58,14 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eX6-52-rQc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1D-Ub-mKt">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nUk-Op-UUQ">
+                                        <rect key="frame" x="132" y="96" width="55" height="37"/>
+                                        <color key="pageIndicatorTintColor" red="1" green="0.30494443925048875" blue="0.14408917856696879" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.44972649450000002" green="0.1049269889" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tlv-y5-yP7">
                                         <rect key="frame" x="0.0" y="136" width="320" height="76"/>
                                         <subviews>
@@ -106,29 +114,33 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1D-Ub-mKt">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
-                                    </scrollView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nUk-Op-UUQ">
-                                        <rect key="frame" x="132" y="96" width="55" height="37"/>
-                                        <color key="pageIndicatorTintColor" red="1" green="0.30494443925048875" blue="0.14408917856696879" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="currentPageIndicatorTintColor" red="0.44972649450000002" green="0.1049269889" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </pageControl>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ9-Ii-hI6" userLabel="jingquView">
                                         <rect key="frame" x="0.0" y="208" width="320" height="294"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="景区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-e8-E60">
                                                 <rect key="frame" x="26" y="0.0" width="134" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jingqu_01" translatesAutoresizingMaskIntoConstraints="NO" id="oL4-As-YLP">
                                                 <rect key="frame" x="8" y="24" width="304" height="128"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jingqu_02" translatesAutoresizingMaskIntoConstraints="NO" id="65f-S2-JWZ">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jingqu_02" translatesAutoresizingMaskIntoConstraints="NO" id="65f-S2-JWZ">
                                                 <rect key="frame" x="8" y="160" width="304" height="128"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-Nf-XmY">
+                                                <rect key="frame" x="13" y="24" width="299" height="135"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <size key="titleShadowOffset" width="3" height="1"/>
+                                                <state key="normal" title="遇见灵山">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="DD4-1b-0EJ" kind="push" id="mzQ-XJ-xZE"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -138,7 +150,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="美食" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-vi-l31">
                                                 <rect key="frame" x="26" y="0.0" width="134" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meishi_01" translatesAutoresizingMaskIntoConstraints="NO" id="RFm-R4-p9T">
@@ -156,7 +168,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="酒店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-N7-pj7">
                                                 <rect key="frame" x="26" y="0.0" width="134" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jiudian_01" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-8y-hoA">
@@ -171,16 +183,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.84757915296052633" alpha="1" colorSpace="calibratedWhite"/>
                             </scrollView>
-                            <searchBar alpha="0.69999999999999996" contentMode="redraw" fixedFrame="YES" text="" placeholder="搜索你的目的地" translatesAutoresizingMaskIntoConstraints="NO" id="F3e-E0-Pq8">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <color key="backgroundColor" red="0.44972649447146296" green="0.10492698893788532" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4gy-W7-gcc"/>
                     <connections>
+                        <outlet property="lastView" destination="ji0-wF-1pt" id="b7k-Gh-bOd"/>
                         <outlet property="mainScrollView" destination="eX6-52-rQc" id="l0L-YT-vaI"/>
                         <outlet property="picturePageControl" destination="nUk-Op-UUQ" id="OdC-wC-HSz"/>
                         <outlet property="pictureScrollView" destination="l1D-Ub-mKt" id="hji-7g-rIg"/>
@@ -188,7 +196,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1P-Rk-KwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="-418"/>
+            <point key="canvasLocation" x="1014" y="-623"/>
+        </scene>
+        <!--遇见灵山-->
+        <scene sceneID="5ES-7i-5bM">
+            <objects>
+                <viewController id="DD4-1b-0EJ" customClass="LingShanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UUf-rF-QiG"/>
+                        <viewControllerLayoutGuide type="bottom" id="rqf-Pd-Ov7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oDe-Wk-DR7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="遇见灵山" id="q8h-5u-Acg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fO0-Ut-xv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="-623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zFG-hl-b7W">
+            <objects>
+                <viewController id="BDs-Cy-98e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yu9-Nz-JDS"/>
+                        <viewControllerLayoutGuide type="bottom" id="oms-fo-dG7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VVl-Gh-mY6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0si-nw-Emb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="4"/>
         </scene>
         <!--地图-->
         <scene sceneID="gFf-uT-h7s">
@@ -207,12 +252,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2C-FP-1Wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="360"/>
+            <point key="canvasLocation" x="719" y="740"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="36C-Xe-Olz">
             <objects>
-                <navigationController id="N0j-Gf-mKW" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="N0j-Gf-mKW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNw-uJ-FxR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -223,7 +268,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egy-Me-KmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-435" y="176"/>
+            <point key="canvasLocation" x="-430" y="71"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CQO-q8-Qno">
@@ -238,7 +283,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="K7g-Mt-0Qu" kind="relationship" relationship="viewControllers" id="ija-AT-k2a"/>
+                        <segue destination="K7g-Mt-0Qu" kind="relationship" relationship="viewControllers" id="i7f-pM-m7k"/>
                         <segue destination="aZj-LM-knx" kind="relationship" relationship="viewControllers" id="N6g-YH-VJg"/>
                         <segue destination="tQg-QT-H1J" kind="relationship" relationship="viewControllers" id="fvu-oh-vac"/>
                         <segue destination="VBs-30-274" kind="relationship" relationship="viewControllers" id="xrw-Lf-nV2"/>
@@ -246,24 +291,28 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gy3-rx-bNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="176"/>
+            <point key="canvasLocation" x="232" y="17"/>
         </scene>
         <!--首页-->
         <scene sceneID="Yns-ld-Iqn">
             <objects>
-                <navigationController id="K7g-Mt-0Qu" sceneMemberID="viewController">
+                <navigationController hidesBottomBarWhenPushed="YES" id="K7g-Mt-0Qu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" id="LbW-df-luo"/>
+                    <navigationItem key="navigationItem" id="phd-PP-GLm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mkt-2v-vzH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="P0v-3G-s7G">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="gNM-II-uzX" kind="relationship" relationship="rootViewController" id="Mfp-JN-JCd"/>
+                        <segue destination="gNM-II-uzX" kind="relationship" relationship="rootViewController" id="trL-ue-akP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xa-mV-LtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="-285"/>
+            <point key="canvasLocation" x="611" y="1"/>
         </scene>
     </scenes>
     <resources>

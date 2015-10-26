@@ -7,10 +7,13 @@
 //
 
 #define HZPImageCount 4
+
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
+
 #import "MainViewController.h"
 
-
-@interface MainViewController () <UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface MainViewController () <UIScrollViewDelegate,UISearchBarDelegate,UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView; // 上下滑动的ScrollView
 
@@ -23,6 +26,9 @@
 
 
 @property (nonatomic,strong) NSMutableArray *pictureArray; // 数据存放
+
+@property (weak, nonatomic) IBOutlet UIView *lastView; // 最后一个View
+
 @end
 
 @implementation MainViewController
@@ -32,17 +38,33 @@
     
     self.pictureScrollView.delegate=self;
     
+    
     //设置scrollView的大小
-   // CGFloat contentH=CGRectGetMaxY(self.lastTableView.frame);
-    self.mainScrollView.contentSize=CGSizeMake(0, 1800);
-    
-    self.mainScrollView.contentInset=UIEdgeInsetsMake(68, 0, 0, 0);
-    self.mainScrollView.contentOffset=CGPointMake(0, -68);
+    CGFloat contentH=CGRectGetMaxY(self.lastView.frame);
+    self.mainScrollView.contentSize=CGSizeMake(0, contentH);
+    self.mainScrollView.contentInset=UIEdgeInsetsMake(4, 0, -44, 0);
+    self.mainScrollView.contentOffset=CGPointMake(0, -4);
     [self pictureChange];
+ 
+    [self searchBarBySelf];
     
-    
+    [self clickBlackHidenKeyboard];
 }
 
+// 导航栏上的搜索框
+- (void)searchBarBySelf
+{
+    UISearchBar *search=[[UISearchBar alloc]initWithFrame:CGRectMake(-8, 0, SCREEN_WIDTH, 44)];
+    search.delegate=self;
+    [search setTintColor:[UIColor clearColor]];
+    [search setPlaceholder:@"输入目的地"];
+    
+    UIView *searchView=[[UIView alloc]initWithFrame:CGRectMake(-16, 0, SCREEN_WIDTH, 44)];
+    searchView.backgroundColor=[UIColor blueColor];
+    [searchView addSubview:search];
+    self.navigationItem.titleView=searchView;
+    
+}
 // 轮播器
 - (void)pictureChange
 {
@@ -54,6 +76,7 @@
     //将图片加载到ScrollView中
     for (int i=0; i<HZPImageCount; i++) {
         UIImageView *imageView=[[UIImageView alloc]init];
+//        imageView.userInteractionEnabled=YES; //图片可点击
         
         CGFloat imageX=i * imageW;
         imageView.frame=CGRectMake(imageX, imageY, imageW, imageH);
@@ -135,5 +158,39 @@
     [self addTimer];
 }
 
+#pragma mark - 点击空白处回收键盘
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view resignFirstResponder ];
+}
+
+- (void) clickBlackHidenKeyboard
+{
+    UITapGestureRecognizer *tgpa=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTapped:)];
+    
+    tgpa.cancelsTouchesInView=NO;
+    
+    [self.view addGestureRecognizer:tgpa];
+      
+}
+- (void)viewTapped:(UITapGestureRecognizer *)tgpa
+{
+    [self.view endEditing:YES];
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if ([string isEqualToString:@"\n"]) {
+        [textField resignFirstResponder];
+        return NO;
+    }
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end
