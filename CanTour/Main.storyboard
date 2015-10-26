@@ -69,77 +69,41 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tlv-y5-yP7">
                                         <rect key="frame" x="0.0" y="136" width="320" height="76"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53u-uN-NVH">
-                                                <rect key="frame" x="15" y="16" width="40" height="40"/>
-                                                <color key="backgroundColor" red="0.68891051857423813" green="0.96066378970939192" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="美食">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS2-s8-djm">
+                                                <rect key="frame" x="112" y="14" width="40" height="50"/>
+                                                <state key="normal" image="酒店">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS2-s8-djm">
-                                                <rect key="frame" x="115" y="14" width="40" height="40"/>
-                                                <color key="backgroundColor" red="0.68891051859999997" green="0.96066378969999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="酒店">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzd-4b-dWL">
+                                                <rect key="frame" x="64" y="14" width="40" height="50"/>
+                                                <state key="normal" image="路线">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzd-4b-dWL">
-                                                <rect key="frame" x="65" y="14" width="40" height="40"/>
-                                                <color key="backgroundColor" red="0.68891051859999997" green="0.96066378969999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="路线">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuK-Fx-ZWv">
+                                                <rect key="frame" x="256" y="14" width="40" height="50"/>
+                                                <state key="normal" image="娱乐">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuK-Fx-ZWv">
-                                                <rect key="frame" x="265" y="14" width="40" height="40"/>
-                                                <color key="backgroundColor" red="0.68891051859999997" green="0.96066378969999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="娱乐">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r18-SK-BgT">
+                                                <rect key="frame" x="208" y="14" width="40" height="50"/>
+                                                <state key="normal" image="交通">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r18-SK-BgT">
-                                                <rect key="frame" x="215" y="14" width="40" height="40"/>
-                                                <color key="backgroundColor" red="0.68891051859999997" green="0.96066378969999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="交通">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqi-wR-t5I">
+                                                <rect key="frame" x="160" y="14" width="40" height="50"/>
+                                                <state key="normal" image="商场">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqi-wR-t5I">
-                                                <rect key="frame" x="165" y="14" width="40" height="40"/>
-                                                <color key="backgroundColor" red="0.68891051859999997" green="0.96066378969999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="商场">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53u-uN-NVH">
+                                                <rect key="frame" x="16" y="14" width="40" height="50"/>
+                                                <state key="normal" image="美食">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ9-Ii-hI6" userLabel="jingquView">
-                                        <rect key="frame" x="0.0" y="208" width="320" height="294"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="景区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-e8-E60">
-                                                <rect key="frame" x="26" y="0.0" width="134" height="29"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jingqu_01" translatesAutoresizingMaskIntoConstraints="NO" id="oL4-As-YLP">
-                                                <rect key="frame" x="8" y="24" width="304" height="128"/>
-                                            </imageView>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jingqu_02" translatesAutoresizingMaskIntoConstraints="NO" id="65f-S2-JWZ">
-                                                <rect key="frame" x="8" y="160" width="304" height="128"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-Nf-XmY">
-                                                <rect key="frame" x="13" y="24" width="299" height="135"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <size key="titleShadowOffset" width="3" height="1"/>
-                                                <state key="normal" title="遇见灵山">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="DD4-1b-0EJ" kind="push" id="mzQ-XJ-xZE"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -177,6 +141,36 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jiudian_02" translatesAutoresizingMaskIntoConstraints="NO" id="UJu-0q-Vyb">
                                                 <rect key="frame" x="8" y="160" width="304" height="128"/>
                                             </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ9-Ii-hI6" userLabel="jingquView">
+                                        <rect key="frame" x="0.0" y="208" width="320" height="294"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="精选·景区主题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-e8-E60">
+                                                <rect key="frame" x="26" y="0.0" width="134" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jingqu_01" translatesAutoresizingMaskIntoConstraints="NO" id="oL4-As-YLP">
+                                                <rect key="frame" x="8" y="24" width="304" height="128"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jingqu_02" translatesAutoresizingMaskIntoConstraints="NO" id="65f-S2-JWZ">
+                                                <rect key="frame" x="8" y="160" width="304" height="128"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-Nf-XmY">
+                                                <rect key="frame" x="13" y="24" width="299" height="135"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <size key="titleShadowOffset" width="3" height="1"/>
+                                                <state key="normal" title="遇见灵山">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="DD4-1b-0EJ" kind="push" id="mzQ-XJ-xZE"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -322,6 +316,12 @@
         <image name="jiudian_02" width="320" height="122"/>
         <image name="meishi_01" width="320" height="122"/>
         <image name="meishi_02" width="320" height="122"/>
+        <image name="交通" width="40" height="50"/>
+        <image name="商场" width="40" height="50"/>
+        <image name="娱乐" width="40" height="50"/>
+        <image name="美食" width="40" height="50"/>
+        <image name="路线" width="40" height="50"/>
+        <image name="酒店" width="40" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
