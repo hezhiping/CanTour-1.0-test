@@ -17,6 +17,10 @@
 		047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D76BB1BDD0B210032A81A /* LingShanViewController.m */; };
 		049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D7BA41BD4EA6E0040C143 /* MainViewController.m */; };
 		04A581311BDA34B70041D32F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A581301BDA34B70041D32F /* Main.storyboard */; };
+		04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CFBA1BDE199A0095CA0B /* LingShanView.m */; };
+		04F5CFBD1BDE19C50095CA0B /* LingShanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5CFBC1BDE19C50095CA0B /* LingShanView.xib */; };
+		04F5CFC21BDE20D30095CA0B /* LingShan.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CFC11BDE20D30095CA0B /* LingShan.m */; };
+		04F5CFC41BDE20FC0095CA0B /* LSHotel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F5CFC31BDE20FC0095CA0B /* LSHotel.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		049D7BA31BD4EA6E0040C143 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "MainViewController（首页）/MainViewController.h"; sourceTree = "<group>"; };
 		049D7BA41BD4EA6E0040C143 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "MainViewController（首页）/MainViewController.m"; sourceTree = "<group>"; };
 		04A581301BDA34B70041D32F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04F5CFB91BDE199A0095CA0B /* LingShanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LingShanView.h; path = LingShan/LingShanView.h; sourceTree = "<group>"; };
+		04F5CFBA1BDE199A0095CA0B /* LingShanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LingShanView.m; path = LingShan/LingShanView.m; sourceTree = "<group>"; };
+		04F5CFBC1BDE19C50095CA0B /* LingShanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LingShanView.xib; path = LingShan/LingShanView.xib; sourceTree = "<group>"; };
+		04F5CFC01BDE20D30095CA0B /* LingShan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LingShan.h; path = LingShan/LingShan.h; sourceTree = "<group>"; };
+		04F5CFC11BDE20D30095CA0B /* LingShan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LingShan.m; path = LingShan/LingShan.m; sourceTree = "<group>"; };
+		04F5CFC31BDE20FC0095CA0B /* LSHotel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LSHotel.plist; path = LingShan/LSHotel.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +149,14 @@
 		047D76BD1BDD0B270032A81A /* LingShan（灵山） */ = {
 			isa = PBXGroup;
 			children = (
+				04F5CFC31BDE20FC0095CA0B /* LSHotel.plist */,
 				047D76BA1BDD0B210032A81A /* LingShanViewController.h */,
 				047D76BB1BDD0B210032A81A /* LingShanViewController.m */,
+				04F5CFBC1BDE19C50095CA0B /* LingShanView.xib */,
+				04F5CFB91BDE199A0095CA0B /* LingShanView.h */,
+				04F5CFBA1BDE199A0095CA0B /* LingShanView.m */,
+				04F5CFC01BDE20D30095CA0B /* LingShan.h */,
+				04F5CFC11BDE20D30095CA0B /* LingShan.m */,
 			);
 			name = "LingShan（灵山）";
 			sourceTree = "<group>";
@@ -236,8 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F5CFBD1BDE19C50095CA0B /* LingShanView.xib in Resources */,
 				04A581311BDA34B70041D32F /* Main.storyboard in Resources */,
 				0404EDF01BD4DE8600801A82 /* LaunchScreen.xib in Resources */,
+				04F5CFC41BDE20FC0095CA0B /* LSHotel.plist in Resources */,
 				0404EDED1BD4DE8600801A82 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */,
+				04F5CFC21BDE20D30095CA0B /* LingShan.m in Sources */,
 				047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */,
 				0404EDE21BD4DE8500801A82 /* AppDelegate.m in Sources */,
 				0404EDE51BD4DE8500801A82 /* CanTour.xcdatamodeld in Sources */,

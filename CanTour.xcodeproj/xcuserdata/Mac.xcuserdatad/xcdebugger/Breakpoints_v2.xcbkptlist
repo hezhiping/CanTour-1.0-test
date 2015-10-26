@@ -19,30 +19,30 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CanTour/LingShan/LingShanViewController.m"
-            timestampString = "467536909.468587"
+            filePath = "CanTour/LingShan/LingShan.m"
+            timestampString = "467554860.430811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "-layoutOfView"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "+hotelList"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CanTour/LingShan/LingShanViewController.m"
-            timestampString = "467536909.468587"
+            filePath = "CanTour/LingShan/LingShanView.m"
+            timestampString = "467555524.381905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "@implementation LingShanViewController"
-            landmarkType = "3">
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-setHotelInfo:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -52,12 +52,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CanTour/LingShan/LingShanViewController.m"
-            timestampString = "467536909.468587"
+            timestampString = "467557099.659359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "-layoutOfView"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "-creatHotel"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

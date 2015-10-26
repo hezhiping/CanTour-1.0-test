@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>hotel_01</string>
+		<key>name</key>
+		<string>迪拜帆船酒店</string>
+		<key>price</key>
+		<string>￥156</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>hotel_02</string>
+		<key>name</key>
+		<string>迪拜帆船酒店</string>
+		<key>price</key>
+		<string>￥11110</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>hotel_03</string>
+		<key>name</key>
+		<string>迪拜帆船酒店</string>
+		<key>price</key>
+		<string>￥2352</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>hotel_04</string>
+		<key>name</key>
+		<string>迪拜帆船酒店</string>
+		<key>price</key>
+		<string>￥55665</string>
+	</dict>
+</array>
+</plist>

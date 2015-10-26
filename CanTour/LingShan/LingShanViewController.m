@@ -10,6 +10,8 @@
 #define UISCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 #import "LingShanViewController.h"
+#import "LingShan.h"
+#import "LingShanView.h"
 
 @interface LingShanViewController ()
 {
@@ -22,6 +24,7 @@
     UIView *_blockView; //空白区域
     
 }
+@property (nonatomic,strong) NSArray *hotelList;
 @end
 
 @implementation LingShanViewController
@@ -40,6 +43,8 @@
     
     //添加酒店
     [self creatHotel];
+    // 滑动大小
+    [self SetContenSize];
 }
 
 // 创建scrollview
@@ -71,15 +76,6 @@
     _label.text=@"健康的历史";
     _label.textAlignment=YES;
     [_lingShanScrollView addSubview:_label];
-    
-    
-//    // 创建空白view
-//    CGFloat imageY=CGRectGetMaxY(_label.frame);
-//    CGFloat viewH=(_images.frame.size.height+_label.frame.size.height)*1.8;
-//    _blockView =[[UIView alloc]initWithFrame:CGRectMake(8, imageY, UISCREEN_WIDTH-16, viewH)];
-//    _blockView.backgroundColor=[UIColor whiteColor];
-//    [_lingShanScrollView addSubview:_blockView];
-//
     
     [self creatBGView];
     
@@ -118,9 +114,6 @@
     _label.textAlignment=YES;
     [_lingShanScrollView addSubview:_label];
     
-    //滑动的大小
-    _lingShanScrollView.contentSize=CGSizeMake(0, 1200);
-    
 }
 
 // 设置圆角
@@ -142,15 +135,60 @@
     CGFloat imageY=CGRectGetMaxY(_label.frame);
     CGFloat viewH=(_images.frame.size.height+_label.frame.size.height)*1.8;
     _blockView =[[UIView alloc]initWithFrame:CGRectMake(8, imageY+4, UISCREEN_WIDTH-16, viewH)];
-    _blockView.backgroundColor=[UIColor redColor];
+    _blockView.backgroundColor=[UIColor whiteColor];
     [_lingShanScrollView addSubview:_blockView];
 }
 
+// 来加载
+- (NSArray *)hotelList
+{
+    if (_hotelList==nil) {
+        _hotelList=[LingShan hotelList];
+    }
+    return _hotelList;
+}
+
+//创建旅馆
 - (void)creatHotel
 {
     [self creatBGView];
-//    CGFloat jiudianX=8;
-//    CGFloat jiudianY= ;
-//    _blockView=[[UIView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
+    
+    NSLog(@"%f",_blockView.frame.size.height);
+    NSLog(@"%@",self.hotelList)
+    ;
+    for (int i=0; i < self.hotelList.count ; i++)
+    {
+        LingShanView *subview=[LingShanView hotelView];
+        [_blockView addSubview:subview];
+        
+        // 九宫格的带笑傲
+        CGFloat subViewW=132;
+        CGFloat subViewH=142;
+        
+        // 横间距和列间距
+        CGFloat marginX=(UISCREEN_WIDTH-16-2*subViewW)/3;
+        CGFloat marginY=(_blockView.frame.size.height-2*subViewH)/3;
+        
+        // 当前的行列号
+        int row=i/2;
+        int colum=i%2;
+        
+        // 坐标
+        CGFloat subviewX=marginX+(subViewW + marginX) * colum;
+        CGFloat subviewY=marginY+(subViewH + marginY) * row;
+        subview.frame=CGRectMake(subviewX, subviewY, subViewW, subViewH);
+        
+        LingShan *hotel = self.hotelList[i];
+        subview.hotelInfo=hotel;
+    }
+
+}
+
+//滑动的大小
+- (void)SetContenSize
+{
+    
+    CGFloat lastViewY=CGRectGetMaxY(_blockView.frame);
+    _lingShanScrollView.contentSize=CGSizeMake(0, lastViewY+10);
 }
 @end
