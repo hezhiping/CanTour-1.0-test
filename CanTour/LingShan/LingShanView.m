@@ -8,7 +8,8 @@
 
 #import "LingShanView.h"
 #import "LingShan.h"
-
+#import "hotelDetailedViewController.h"
+#import <UIKit/UIKit.h>
 
 @implementation LingShanView
 
@@ -29,4 +30,10 @@
     
 }
 
+- (IBAction)nextPage:(id)sender {
+    
+    NSLog(@"打飞机克里斯多夫几点上课了 ");
+    //发送通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"change" object:nil userInfo:nil];
+}
 @end

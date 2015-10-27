@@ -12,6 +12,7 @@
 #import "LingShanViewController.h"
 #import "LingShan.h"
 #import "LingShanView.h"
+#import "hotelDetailedViewController.h"
 
 @interface LingShanViewController ()
 {
@@ -22,6 +23,8 @@
     UILabel *_label; // 文本
     
     UIView *_blockView; //空白区域
+    
+    
     
 }
 @property (nonatomic,strong) NSArray *hotelList;
@@ -45,6 +48,8 @@
     [self creatHotel];
     // 滑动大小
     [self SetContenSize];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(change) name:@"change" object:nil];
 }
 
 // 创建scrollview
@@ -153,17 +158,21 @@
 {
     [self creatBGView];
     
-    NSLog(@"%f",_blockView.frame.size.height);
-    NSLog(@"%@",self.hotelList)
+//    NSLog(@"%f",_blockView.frame.size.height);
+//    NSLog(@"%@",self.hotelList)
     ;
     for (int i=0; i < self.hotelList.count ; i++)
     {
         LingShanView *subview=[LingShanView hotelView];
+       
+        
         [_blockView addSubview:subview];
         
         // 九宫格的带笑傲
         CGFloat subViewW=132;
         CGFloat subViewH=142;
+       
+        
         
         // 横间距和列间距
         CGFloat marginX=(UISCREEN_WIDTH-16-2*subViewW)/3;
@@ -190,5 +199,21 @@
     
     CGFloat lastViewY=CGRectGetMaxY(_blockView.frame);
     _lingShanScrollView.contentSize=CGSizeMake(0, lastViewY+10);
+}
+
+// 代码控制跳转页面
+- (void)change
+{
+    // 获取故事板
+    UIStoryboard *mainStryboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    hotelDetailedViewController *hotelDetailed=[mainStryboard instantiateViewControllerWithIdentifier:@"hotelView"];
+
+    hotelDetailed.hidesBottomBarWhenPushed=YES;
+    
+    // 页面Push进来
+    [self.navigationController pushViewController:hotelDetailed animated:YES];
+    
+//    NSLog(@"我进来了哟");
 }
 @end

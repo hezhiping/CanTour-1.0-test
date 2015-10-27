@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="132" height="142"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uT3-Mf-ax3">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uT3-Mf-ax3">
                     <rect key="frame" x="0.0" y="0.0" width="132" height="80"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efF-Ny-TKf">
@@ -26,13 +26,29 @@
                     <color key="textColor" red="1" green="0.30494443929999998" blue="0.14408917860000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZT-D6-S9U">
+                    <rect key="frame" x="0.0" y="0.0" width="132" height="142"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextPage:" destination="DZH-7M-TJa" eventType="touchUpInside" id="jbR-eh-IXa"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0ZT-D6-S9U" secondAttribute="bottom" id="1aB-nT-yfx"/>
+                <constraint firstAttribute="trailing" secondItem="0ZT-D6-S9U" secondAttribute="trailing" id="AL5-lD-3kS"/>
+                <constraint firstItem="0ZT-D6-S9U" firstAttribute="leading" secondItem="DZH-7M-TJa" secondAttribute="leading" id="UOt-yY-zOz"/>
+                <constraint firstItem="0ZT-D6-S9U" firstAttribute="top" secondItem="DZH-7M-TJa" secondAttribute="top" id="sRq-sF-Xkq"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="hotelName" destination="efF-Ny-TKf" id="YgX-tG-TDx"/>
                 <outlet property="iconName" destination="uT3-Mf-ax3" id="wHk-vL-tya"/>
+                <outlet property="nextPage" destination="0ZT-D6-S9U" id="Oms-gh-dIn"/>
                 <outlet property="priceName" destination="uoZ-v2-TWD" id="c2w-1g-uVU"/>
             </connections>
             <point key="canvasLocation" x="155" y="166"/>

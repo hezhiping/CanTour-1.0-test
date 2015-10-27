@@ -10,10 +10,10 @@
 		0404EDDF1BD4DE8500801A82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDDE1BD4DE8500801A82 /* main.m */; };
 		0404EDE21BD4DE8500801A82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDE11BD4DE8500801A82 /* AppDelegate.m */; };
 		0404EDE51BD4DE8500801A82 /* CanTour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDE31BD4DE8500801A82 /* CanTour.xcdatamodeld */; };
-		0404EDE81BD4DE8500801A82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDE71BD4DE8500801A82 /* ViewController.m */; };
 		0404EDED1BD4DE8600801A82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404EDEC1BD4DE8600801A82 /* Images.xcassets */; };
 		0404EDF01BD4DE8600801A82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0404EDEE1BD4DE8600801A82 /* LaunchScreen.xib */; };
 		0404EDFC1BD4DE8600801A82 /* CanTourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDFB1BD4DE8600801A82 /* CanTourTests.m */; };
+		046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */; };
 		047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D76BB1BDD0B210032A81A /* LingShanViewController.m */; };
 		049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D7BA41BD4EA6E0040C143 /* MainViewController.m */; };
 		04A581311BDA34B70041D32F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A581301BDA34B70041D32F /* Main.storyboard */; };
@@ -40,13 +40,13 @@
 		0404EDE01BD4DE8500801A82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0404EDE11BD4DE8500801A82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0404EDE41BD4DE8500801A82 /* CanTour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CanTour.xcdatamodel; sourceTree = "<group>"; };
-		0404EDE61BD4DE8500801A82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0404EDE71BD4DE8500801A82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0404EDEC1BD4DE8600801A82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0404EDEF1BD4DE8600801A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0404EDF51BD4DE8600801A82 /* CanTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0404EDFA1BD4DE8600801A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0404EDFB1BD4DE8600801A82 /* CanTourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanTourTests.m; sourceTree = "<group>"; };
+		046F70F91BDF15460047AC8C /* hotelDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hotelDetailedViewController.h; path = "CanTour/hotelDetailed （酒店详情）/hotelDetailedViewController.h"; sourceTree = "<group>"; };
+		046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hotelDetailedViewController.m; path = "CanTour/hotelDetailed （酒店详情）/hotelDetailedViewController.m"; sourceTree = "<group>"; };
 		047D76BA1BDD0B210032A81A /* LingShanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LingShanViewController.h; path = LingShan/LingShanViewController.h; sourceTree = "<group>"; };
 		047D76BB1BDD0B210032A81A /* LingShanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LingShanViewController.m; path = LingShan/LingShanViewController.m; sourceTree = "<group>"; };
 		049D7BA31BD4EA6E0040C143 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "MainViewController（首页）/MainViewController.h"; sourceTree = "<group>"; };
@@ -101,10 +101,9 @@
 			children = (
 				04A581301BDA34B70041D32F /* Main.storyboard */,
 				049D7BA61BD4EAA40040C143 /* 其他 */,
-				0404EDE61BD4DE8500801A82 /* ViewController.h */,
-				0404EDE71BD4DE8500801A82 /* ViewController.m */,
 				0404EE081BD4E88800801A82 /* MainViewController（首页） */,
 				047D76BD1BDD0B270032A81A /* LingShan（灵山） */,
+				046F70FC1BDF15510047AC8C /* hotelDetailed (酒店详情) */,
 				0404EDEC1BD4DE8600801A82 /* Images.xcassets */,
 				0404EDDC1BD4DE8500801A82 /* Supporting Files */,
 			);
@@ -144,6 +143,16 @@
 				049D7BA41BD4EA6E0040C143 /* MainViewController.m */,
 			);
 			name = "MainViewController（首页）";
+			sourceTree = "<group>";
+		};
+		046F70FC1BDF15510047AC8C /* hotelDetailed (酒店详情) */ = {
+			isa = PBXGroup;
+			children = (
+				046F70F91BDF15460047AC8C /* hotelDetailedViewController.h */,
+				046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */,
+			);
+			name = "hotelDetailed (酒店详情)";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		047D76BD1BDD0B270032A81A /* LingShan（灵山） */ = {
@@ -275,11 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */,
+				046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */,
 				04F5CFC21BDE20D30095CA0B /* LingShan.m in Sources */,
 				047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */,
 				0404EDE21BD4DE8500801A82 /* AppDelegate.m in Sources */,
 				0404EDE51BD4DE8500801A82 /* CanTour.xcdatamodeld in Sources */,
-				0404EDE81BD4DE8500801A82 /* ViewController.m in Sources */,
 				049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */,
 				0404EDDF1BD4DE8500801A82 /* main.m in Sources */,
 			);

@@ -14,7 +14,14 @@
 @property (weak, nonatomic) IBOutlet UIImageView *iconName;
 @property (weak, nonatomic) IBOutlet UILabel *hotelName;
 @property (weak, nonatomic) IBOutlet UILabel *priceName;
+@property (weak, nonatomic) IBOutlet UIButton *nextPage;
+
+- (IBAction)nextPage:(id)sender;
+
+
 @property (nonatomic,strong) LingShan  *hotelInfo;
+
+
 
 + (instancetype)hotelView;
 @end

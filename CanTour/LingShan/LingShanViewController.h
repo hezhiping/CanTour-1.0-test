@@ -10,4 +10,5 @@
 
 @interface LingShanViewController : UIViewController
 
+- (void)change;
 @end
