@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="foodCell" rowHeight="130" id="GWm-D4-0Bc" customClass="FoodViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GWm-D4-0Bc" id="bX6-5m-mDj">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-He-YJn">
+                        <rect key="frame" x="4" y="4" width="312" height="121"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bee-F1-cCm">
+                        <rect key="frame" x="8" y="8" width="130" height="113"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="pKG-9B-tw2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Po-ruX">
+                        <rect key="frame" x="146" y="8" width="174" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="nft-Fq-g6b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOd-pD-iuY">
+                        <rect key="frame" x="146" y="40" width="174" height="89"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="89" id="WXe-XZ-wtw"/>
+                            <constraint firstAttribute="width" constant="174" id="tpv-Ka-QH8"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="简介">
+                                <attributes>
+                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <font key="NSFont" size="13" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bee-F1-cCm" firstAttribute="top" secondItem="bX6-5m-mDj" secondAttribute="topMargin" id="06v-jT-oFc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qOd-pD-iuY" secondAttribute="trailing" constant="-8" id="HwW-Am-Ofo"/>
+                    <constraint firstItem="ZLo-Po-ruX" firstAttribute="top" secondItem="bX6-5m-mDj" secondAttribute="topMargin" id="Ilf-KH-mcV"/>
+                    <constraint firstItem="ZLo-Po-ruX" firstAttribute="leading" secondItem="bee-F1-cCm" secondAttribute="trailing" constant="8" id="Lfb-BS-CSw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZLo-Po-ruX" secondAttribute="trailing" constant="-8" id="PfG-Bk-QNU"/>
+                    <constraint firstItem="bee-F1-cCm" firstAttribute="leading" secondItem="bX6-5m-mDj" secondAttribute="leadingMargin" id="Ty1-0l-7dq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bee-F1-cCm" secondAttribute="bottom" id="VgZ-aC-nFG"/>
+                    <constraint firstItem="Fhd-He-YJn" firstAttribute="top" secondItem="bX6-5m-mDj" secondAttribute="topMargin" constant="-4" id="Y2z-xk-Apn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qOd-pD-iuY" secondAttribute="bottom" constant="-8" id="fE8-Qf-b1v"/>
+                    <constraint firstItem="qOd-pD-iuY" firstAttribute="leading" secondItem="bee-F1-cCm" secondAttribute="trailing" constant="8" id="hZ5-fy-NcY"/>
+                    <constraint firstItem="Fhd-He-YJn" firstAttribute="leading" secondItem="bX6-5m-mDj" secondAttribute="leadingMargin" constant="-4" id="pkI-qd-mVb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fhd-He-YJn" secondAttribute="bottom" constant="-4" id="sH9-LX-elD"/>
+                    <constraint firstItem="qOd-pD-iuY" firstAttribute="top" secondItem="ZLo-Po-ruX" secondAttribute="bottom" constant="8" id="yal-Ss-cS1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fhd-He-YJn" secondAttribute="trailing" constant="-4" id="zeq-6U-ngG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.84757915299999997" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="describe" destination="qOd-pD-iuY" id="gVQ-xB-04l"/>
+                <outlet property="foodPicture" destination="bee-F1-cCm" id="EQ1-ub-b4G"/>
+                <outlet property="nameLabel" destination="ZLo-Po-ruX" id="kq9-2V-Pd4"/>
+            </connections>
+            <point key="canvasLocation" x="419" y="247"/>
+        </tableViewCell>
+    </objects>
+</document>

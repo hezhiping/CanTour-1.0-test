@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>foodPicture</key>
+		<string>meishi_01</string>
+		<key>nameLabel</key>
+		<string>单个</string>
+		<key>describe</key>
+		<string>第三方的发送到发送到发送到</string>
+	</dict>
+	<dict>
+		<key>foodPicture</key>
+		<string>meishi_01</string>
+		<key>nameLabel</key>
+		<string>单个</string>
+		<key>describe</key>
+		<string>第三方的发送到发送到发送到</string>
+	</dict>
+	<dict>
+		<key>foodPicture</key>
+		<string>meishi_01</string>
+		<key>nameLabel</key>
+		<string>单个</string>
+		<key>describe</key>
+		<string>第三方的发送到发送到发送到</string>
+	</dict>
+	<dict>
+		<key>foodPicture</key>
+		<string>meishi_01</string>
+		<key>nameLabel</key>
+		<string>单个</string>
+		<key>describe</key>
+		<string>第三方的发送到发送到发送到</string>
+	</dict>
+</array>
+</plist>

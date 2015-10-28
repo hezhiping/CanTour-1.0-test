@@ -28,9 +28,6 @@
     self.tabBarController.tabBar.hidden=YES;
     
     [self labelHeight];
-//    if (UISCREEN_HEIGHT == 480) {
-//        _pictureView.frame = CGRectMake(0, 0, UISCREEN_WIDTH, 200);
-//    }
 
 }
 
@@ -63,7 +60,6 @@
     
     [alertView show];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

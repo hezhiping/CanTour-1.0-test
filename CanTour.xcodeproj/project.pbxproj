@@ -13,6 +13,10 @@
 		0404EDED1BD4DE8600801A82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404EDEC1BD4DE8600801A82 /* Images.xcassets */; };
 		0404EDF01BD4DE8600801A82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0404EDEE1BD4DE8600801A82 /* LaunchScreen.xib */; };
 		0404EDFC1BD4DE8600801A82 /* CanTourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDFB1BD4DE8600801A82 /* CanTourTests.m */; };
+		042854571BE09585004CD640 /* FoodViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042854561BE09585004CD640 /* FoodViewCell.m */; };
+		042854591BE095B9004CD640 /* FoodCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042854581BE095B9004CD640 /* FoodCellView.xib */; };
+		0428545C1BE098E7004CD640 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428545B1BE098E7004CD640 /* Food.m */; };
+		0428545E1BE0A185004CD640 /* FoodPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0428545D1BE0A185004CD640 /* FoodPlist.plist */; };
 		046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */; };
 		047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D76BB1BDD0B210032A81A /* LingShanViewController.m */; };
 		0498B7A41BDF99280008433C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498B7A31BDF99280008433C /* MapViewController.m */; };
@@ -48,6 +52,12 @@
 		0404EDF51BD4DE8600801A82 /* CanTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0404EDFA1BD4DE8600801A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0404EDFB1BD4DE8600801A82 /* CanTourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanTourTests.m; sourceTree = "<group>"; };
+		042854551BE09585004CD640 /* FoodViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodViewCell.h; path = "food (美食)/FoodViewCell.h"; sourceTree = "<group>"; };
+		042854561BE09585004CD640 /* FoodViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodViewCell.m; path = "food (美食)/FoodViewCell.m"; sourceTree = "<group>"; };
+		042854581BE095B9004CD640 /* FoodCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodCellView.xib; path = "food (美食)/FoodCellView.xib"; sourceTree = "<group>"; };
+		0428545A1BE098E7004CD640 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Food.h; path = "food (美食)/Food.h"; sourceTree = "<group>"; };
+		0428545B1BE098E7004CD640 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Food.m; path = "food (美食)/Food.m"; sourceTree = "<group>"; };
+		0428545D1BE0A185004CD640 /* FoodPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FoodPlist.plist; path = "food (美食)/FoodPlist.plist"; sourceTree = "<group>"; };
 		046F70F91BDF15460047AC8C /* hotelDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hotelDetailedViewController.h; path = "CanTour/hotelDetailed （酒店详情）/hotelDetailedViewController.h"; sourceTree = "<group>"; };
 		046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hotelDetailedViewController.m; path = "CanTour/hotelDetailed （酒店详情）/hotelDetailedViewController.m"; sourceTree = "<group>"; };
 		047D76BA1BDD0B210032A81A /* LingShanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LingShanViewController.h; path = LingShan/LingShanViewController.h; sourceTree = "<group>"; };
@@ -203,8 +213,14 @@
 		0498B7AD1BDFAE820008433C /* food (美食) */ = {
 			isa = PBXGroup;
 			children = (
+				0428545D1BE0A185004CD640 /* FoodPlist.plist */,
 				0498B7AA1BDFAE7C0008433C /* FoodTableViewController.h */,
 				0498B7AB1BDFAE7C0008433C /* FoodTableViewController.m */,
+				0428545A1BE098E7004CD640 /* Food.h */,
+				0428545B1BE098E7004CD640 /* Food.m */,
+				042854551BE09585004CD640 /* FoodViewCell.h */,
+				042854561BE09585004CD640 /* FoodViewCell.m */,
+				042854581BE095B9004CD640 /* FoodCellView.xib */,
 			);
 			name = "food (美食)";
 			sourceTree = "<group>";
@@ -300,11 +316,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042854591BE095B9004CD640 /* FoodCellView.xib in Resources */,
 				04F5CFBD1BDE19C50095CA0B /* LingShanView.xib in Resources */,
 				04A581311BDA34B70041D32F /* Main.storyboard in Resources */,
 				0404EDF01BD4DE8600801A82 /* LaunchScreen.xib in Resources */,
 				04F5CFC41BDE20FC0095CA0B /* LSHotel.plist in Resources */,
 				0404EDED1BD4DE8600801A82 /* Images.xcassets in Resources */,
+				0428545E1BE0A185004CD640 /* FoodPlist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0428545C1BE098E7004CD640 /* Food.m in Sources */,
 				04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */,
 				046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */,
 				04F5CFC21BDE20D30095CA0B /* LingShan.m in Sources */,
@@ -330,6 +349,7 @@
 				047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */,
 				0404EDE21BD4DE8500801A82 /* AppDelegate.m in Sources */,
 				0404EDE51BD4DE8500801A82 /* CanTour.xcdatamodeld in Sources */,
+				042854571BE09585004CD640 /* FoodViewCell.m in Sources */,
 				0498B7AC1BDFAE7C0008433C /* FoodTableViewController.m in Sources */,
 				049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */,
 				0404EDDF1BD4DE8500801A82 /* main.m in Sources */,
