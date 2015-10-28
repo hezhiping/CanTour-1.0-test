@@ -8,9 +8,13 @@
 
 #import "hotelDetailedViewController.h"
 
+#define UISCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define UISCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
 @interface hotelDetailedViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *detailedLabel;
 - (IBAction)buyBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *pictureView;
 
 
 @end
@@ -24,6 +28,9 @@
     self.tabBarController.tabBar.hidden=YES;
     
     [self labelHeight];
+//    if (UISCREEN_HEIGHT == 480) {
+//        _pictureView.frame = CGRectMake(0, 0, UISCREEN_WIDTH, 200);
+//    }
 
 }
 
@@ -33,7 +40,13 @@
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:_detailedLabel.text];
     NSMutableParagraphStyle *paragraphStyle=[[NSMutableParagraphStyle alloc]init];
     
-    [paragraphStyle setLineSpacing:15]; // 行间距
+    if (UISCREEN_HEIGHT == 480 ) {
+        [paragraphStyle setLineSpacing:0]; // 行间距
+    } else if(UISCREEN_HEIGHT == 568){
+        [paragraphStyle setLineSpacing:9];
+    }else{
+        [paragraphStyle setLineSpacing:15];
+    }
     
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [_detailedLabel.text length])];
     _detailedLabel.attributedText=attributedString;

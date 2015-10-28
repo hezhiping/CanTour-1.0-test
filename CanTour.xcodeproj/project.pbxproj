@@ -15,6 +15,9 @@
 		0404EDFC1BD4DE8600801A82 /* CanTourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404EDFB1BD4DE8600801A82 /* CanTourTests.m */; };
 		046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */; };
 		047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D76BB1BDD0B210032A81A /* LingShanViewController.m */; };
+		0498B7A41BDF99280008433C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498B7A31BDF99280008433C /* MapViewController.m */; };
+		0498B7A81BDF99C70008433C /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498B7A71BDF99C70008433C /* SetViewController.m */; };
+		0498B7AC1BDFAE7C0008433C /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498B7AB1BDFAE7C0008433C /* FoodTableViewController.m */; };
 		049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D7BA41BD4EA6E0040C143 /* MainViewController.m */; };
 		04A581311BDA34B70041D32F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A581301BDA34B70041D32F /* Main.storyboard */; };
 		04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CFBA1BDE199A0095CA0B /* LingShanView.m */; };
@@ -49,6 +52,12 @@
 		046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hotelDetailedViewController.m; path = "CanTour/hotelDetailed （酒店详情）/hotelDetailedViewController.m"; sourceTree = "<group>"; };
 		047D76BA1BDD0B210032A81A /* LingShanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LingShanViewController.h; path = LingShan/LingShanViewController.h; sourceTree = "<group>"; };
 		047D76BB1BDD0B210032A81A /* LingShanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LingShanViewController.m; path = LingShan/LingShanViewController.m; sourceTree = "<group>"; };
+		0498B7A21BDF99280008433C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = "map (地图)/MapViewController.h"; sourceTree = "<group>"; };
+		0498B7A31BDF99280008433C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = "map (地图)/MapViewController.m"; sourceTree = "<group>"; };
+		0498B7A61BDF99C70008433C /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetViewController.h; path = My/SetViewController.h; sourceTree = "<group>"; };
+		0498B7A71BDF99C70008433C /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetViewController.m; path = My/SetViewController.m; sourceTree = "<group>"; };
+		0498B7AA1BDFAE7C0008433C /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodTableViewController.h; path = "food (美食)/FoodTableViewController.h"; sourceTree = "<group>"; };
+		0498B7AB1BDFAE7C0008433C /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTableViewController.m; path = "food (美食)/FoodTableViewController.m"; sourceTree = "<group>"; };
 		049D7BA31BD4EA6E0040C143 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "MainViewController（首页）/MainViewController.h"; sourceTree = "<group>"; };
 		049D7BA41BD4EA6E0040C143 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "MainViewController（首页）/MainViewController.m"; sourceTree = "<group>"; };
 		04A581301BDA34B70041D32F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +115,9 @@
 				046F70FC1BDF15510047AC8C /* hotelDetailed (酒店详情) */,
 				0404EDEC1BD4DE8600801A82 /* Images.xcassets */,
 				0404EDDC1BD4DE8500801A82 /* Supporting Files */,
+				0498B7A51BDF992E0008433C /* map (地图) */,
+				0498B7A91BDF99CE0008433C /* my (我的) */,
+				0498B7AD1BDFAE820008433C /* food (美食) */,
 			);
 			path = CanTour;
 			sourceTree = "<group>";
@@ -168,6 +180,33 @@
 				04F5CFC11BDE20D30095CA0B /* LingShan.m */,
 			);
 			name = "LingShan（灵山）";
+			sourceTree = "<group>";
+		};
+		0498B7A51BDF992E0008433C /* map (地图) */ = {
+			isa = PBXGroup;
+			children = (
+				0498B7A21BDF99280008433C /* MapViewController.h */,
+				0498B7A31BDF99280008433C /* MapViewController.m */,
+			);
+			name = "map (地图)";
+			sourceTree = "<group>";
+		};
+		0498B7A91BDF99CE0008433C /* my (我的) */ = {
+			isa = PBXGroup;
+			children = (
+				0498B7A61BDF99C70008433C /* SetViewController.h */,
+				0498B7A71BDF99C70008433C /* SetViewController.m */,
+			);
+			name = "my (我的)";
+			sourceTree = "<group>";
+		};
+		0498B7AD1BDFAE820008433C /* food (美食) */ = {
+			isa = PBXGroup;
+			children = (
+				0498B7AA1BDFAE7C0008433C /* FoodTableViewController.h */,
+				0498B7AB1BDFAE7C0008433C /* FoodTableViewController.m */,
+			);
+			name = "food (美食)";
 			sourceTree = "<group>";
 		};
 		049D7BA61BD4EAA40040C143 /* 其他 */ = {
@@ -286,9 +325,12 @@
 				04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */,
 				046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */,
 				04F5CFC21BDE20D30095CA0B /* LingShan.m in Sources */,
+				0498B7A81BDF99C70008433C /* SetViewController.m in Sources */,
+				0498B7A41BDF99280008433C /* MapViewController.m in Sources */,
 				047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */,
 				0404EDE21BD4DE8500801A82 /* AppDelegate.m in Sources */,
 				0404EDE51BD4DE8500801A82 /* CanTour.xcdatamodeld in Sources */,
+				0498B7AC1BDFAE7C0008433C /* FoodTableViewController.m in Sources */,
 				049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */,
 				0404EDDF1BD4DE8500801A82 /* main.m in Sources */,
 			);
