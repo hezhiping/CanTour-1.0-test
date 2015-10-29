@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2F98F15B-9F74-4F4A-A92C-B7693AD73F70</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>CanTour</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>64B2376EF9D0A04D74FE96C57BF33FC1EF4F29FD</key>
 		<string>https://github.com/hezhiping/CanTour-1.0-test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CanTour.xcodeproj/project.xcworkspace</string>
+	<string>CanTour.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>64B2376EF9D0A04D74FE96C57BF33FC1EF4F29FD</key>

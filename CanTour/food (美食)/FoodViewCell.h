@@ -11,7 +11,10 @@
 @interface FoodViewCell : UITableViewCell
 
 // 创建美食数据模型
-@property (nonatomic,strong)Food *food;
+@property (nonatomic,strong) Food *food;
 
+
+// 在cell的类中创建cell
 + (instancetype)cellWithTableView:(UITableView *)tableview;
+
 @end

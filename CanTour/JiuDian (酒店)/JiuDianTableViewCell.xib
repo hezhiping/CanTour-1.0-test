@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="jiuDianCell" rowHeight="155" id="ik1-5w-kkb" customClass="JiuDianTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ik1-5w-kkb" id="hTN-a0-xGs">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byR-u1-8x5">
+                        <rect key="frame" x="4" y="4" width="312" height="146"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jmd-1l-pFy">
+                                <rect key="frame" x="4" y="4" width="130" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Af5-d1-vdZ"/>
+                                    <constraint firstAttribute="height" constant="140" id="ega-Gx-UDM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酒店名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXg-uh-MzS">
+                                <rect key="frame" x="142" y="30" width="170" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="5hs-bB-4cF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuL-TF-FSD">
+                                <rect key="frame" x="202" y="104" width="106" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="3ub-f4-t6Y"/>
+                                    <constraint firstAttribute="height" constant="34" id="H4l-UF-I54"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XXg-uh-MzS" firstAttribute="leading" secondItem="jmd-1l-pFy" secondAttribute="trailing" constant="8" id="4NA-15-Nx9"/>
+                            <constraint firstAttribute="bottom" secondItem="wuL-TF-FSD" secondAttribute="bottom" constant="8" id="LHN-dC-6pH"/>
+                            <constraint firstAttribute="trailing" secondItem="wuL-TF-FSD" secondAttribute="trailing" constant="4" id="MtY-h9-zQ4"/>
+                            <constraint firstItem="jmd-1l-pFy" firstAttribute="top" secondItem="byR-u1-8x5" secondAttribute="top" constant="4" id="NFf-JV-JnD"/>
+                            <constraint firstAttribute="trailing" secondItem="XXg-uh-MzS" secondAttribute="trailing" id="NqO-i5-C26"/>
+                            <constraint firstItem="XXg-uh-MzS" firstAttribute="top" secondItem="byR-u1-8x5" secondAttribute="top" constant="30" id="R3A-tg-HMD"/>
+                            <constraint firstItem="jmd-1l-pFy" firstAttribute="leading" secondItem="byR-u1-8x5" secondAttribute="leading" constant="4" id="phY-RR-3gE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="byR-u1-8x5" firstAttribute="leading" secondItem="hTN-a0-xGs" secondAttribute="leadingMargin" constant="-4" id="TYj-ER-9Cf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="byR-u1-8x5" secondAttribute="bottom" constant="-4" id="gDM-Zq-e23"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="byR-u1-8x5" secondAttribute="trailing" constant="-4" id="k5t-8q-qbd"/>
+                    <constraint firstItem="byR-u1-8x5" firstAttribute="top" secondItem="hTN-a0-xGs" secondAttribute="topMargin" constant="-4" id="uOB-Ah-jq6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="jiuDianBGView" destination="byR-u1-8x5" id="Twh-CM-1tV"/>
+                <outlet property="jiuDianName" destination="XXg-uh-MzS" id="Q1N-w4-qak"/>
+                <outlet property="jiuDianPic" destination="jmd-1l-pFy" id="a4y-HW-LDE"/>
+                <outlet property="jiuDianPrice" destination="wuL-TF-FSD" id="yvh-Ul-x6x"/>
+            </connections>
+            <point key="canvasLocation" x="417" y="212.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -17,6 +17,10 @@
 		042854591BE095B9004CD640 /* FoodCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042854581BE095B9004CD640 /* FoodCellView.xib */; };
 		0428545C1BE098E7004CD640 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428545B1BE098E7004CD640 /* Food.m */; };
 		0428545E1BE0A185004CD640 /* FoodPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0428545D1BE0A185004CD640 /* FoodPlist.plist */; };
+		042854741BE0CB60004CD640 /* JiuDian.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428546E1BE0CB60004CD640 /* JiuDian.m */; };
+		042854751BE0CB60004CD640 /* JiuDianTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042854701BE0CB60004CD640 /* JiuDianTableViewCell.m */; };
+		042854761BE0CB60004CD640 /* JiuDianTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042854711BE0CB60004CD640 /* JiuDianTableViewCell.xib */; };
+		042854771BE0CB60004CD640 /* JiuDianTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042854731BE0CB60004CD640 /* JiuDianTableViewController.m */; };
 		046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */; };
 		047D76BC1BDD0B210032A81A /* LingShanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D76BB1BDD0B210032A81A /* LingShanViewController.m */; };
 		0498B7A41BDF99280008433C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498B7A31BDF99280008433C /* MapViewController.m */; };
@@ -24,6 +28,7 @@
 		0498B7AC1BDFAE7C0008433C /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498B7AB1BDFAE7C0008433C /* FoodTableViewController.m */; };
 		049D7BA51BD4EA6E0040C143 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D7BA41BD4EA6E0040C143 /* MainViewController.m */; };
 		04A581311BDA34B70041D32F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A581301BDA34B70041D32F /* Main.storyboard */; };
+		04F43ACC1BE1FA2E0004CF74 /* JiuDian.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F43ACB1BE1FA2E0004CF74 /* JiuDian.plist */; };
 		04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CFBA1BDE199A0095CA0B /* LingShanView.m */; };
 		04F5CFBD1BDE19C50095CA0B /* LingShanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5CFBC1BDE19C50095CA0B /* LingShanView.xib */; };
 		04F5CFC21BDE20D30095CA0B /* LingShan.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CFC11BDE20D30095CA0B /* LingShan.m */; };
@@ -58,6 +63,13 @@
 		0428545A1BE098E7004CD640 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Food.h; path = "food (美食)/Food.h"; sourceTree = "<group>"; };
 		0428545B1BE098E7004CD640 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Food.m; path = "food (美食)/Food.m"; sourceTree = "<group>"; };
 		0428545D1BE0A185004CD640 /* FoodPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FoodPlist.plist; path = "food (美食)/FoodPlist.plist"; sourceTree = "<group>"; };
+		0428546D1BE0CB60004CD640 /* JiuDian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JiuDian.h; path = "JiuDian (酒店)/JiuDian.h"; sourceTree = "<group>"; };
+		0428546E1BE0CB60004CD640 /* JiuDian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JiuDian.m; path = "JiuDian (酒店)/JiuDian.m"; sourceTree = "<group>"; };
+		0428546F1BE0CB60004CD640 /* JiuDianTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JiuDianTableViewCell.h; path = "JiuDian (酒店)/JiuDianTableViewCell.h"; sourceTree = "<group>"; };
+		042854701BE0CB60004CD640 /* JiuDianTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JiuDianTableViewCell.m; path = "JiuDian (酒店)/JiuDianTableViewCell.m"; sourceTree = "<group>"; };
+		042854711BE0CB60004CD640 /* JiuDianTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JiuDianTableViewCell.xib; path = "JiuDian (酒店)/JiuDianTableViewCell.xib"; sourceTree = "<group>"; };
+		042854721BE0CB60004CD640 /* JiuDianTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JiuDianTableViewController.h; path = "JiuDian (酒店)/JiuDianTableViewController.h"; sourceTree = "<group>"; };
+		042854731BE0CB60004CD640 /* JiuDianTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JiuDianTableViewController.m; path = "JiuDian (酒店)/JiuDianTableViewController.m"; sourceTree = "<group>"; };
 		046F70F91BDF15460047AC8C /* hotelDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hotelDetailedViewController.h; path = "CanTour/hotelDetailed （酒店详情）/hotelDetailedViewController.h"; sourceTree = "<group>"; };
 		046F70FA1BDF15460047AC8C /* hotelDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hotelDetailedViewController.m; path = "CanTour/hotelDetailed （酒店详情）/hotelDetailedViewController.m"; sourceTree = "<group>"; };
 		047D76BA1BDD0B210032A81A /* LingShanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LingShanViewController.h; path = LingShan/LingShanViewController.h; sourceTree = "<group>"; };
@@ -71,6 +83,7 @@
 		049D7BA31BD4EA6E0040C143 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "MainViewController（首页）/MainViewController.h"; sourceTree = "<group>"; };
 		049D7BA41BD4EA6E0040C143 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "MainViewController（首页）/MainViewController.m"; sourceTree = "<group>"; };
 		04A581301BDA34B70041D32F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04F43ACB1BE1FA2E0004CF74 /* JiuDian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JiuDian.plist; sourceTree = "<group>"; };
 		04F5CFB91BDE199A0095CA0B /* LingShanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LingShanView.h; path = LingShan/LingShanView.h; sourceTree = "<group>"; };
 		04F5CFBA1BDE199A0095CA0B /* LingShanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LingShanView.m; path = LingShan/LingShanView.m; sourceTree = "<group>"; };
 		04F5CFBC1BDE19C50095CA0B /* LingShanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LingShanView.xib; path = LingShan/LingShanView.xib; sourceTree = "<group>"; };
@@ -128,6 +141,7 @@
 				0498B7A51BDF992E0008433C /* map (地图) */,
 				0498B7A91BDF99CE0008433C /* my (我的) */,
 				0498B7AD1BDFAE820008433C /* food (美食) */,
+				042854621BE0C9AD004CD640 /* jiudian （酒店） */,
 			);
 			path = CanTour;
 			sourceTree = "<group>";
@@ -165,6 +179,21 @@
 				049D7BA41BD4EA6E0040C143 /* MainViewController.m */,
 			);
 			name = "MainViewController（首页）";
+			sourceTree = "<group>";
+		};
+		042854621BE0C9AD004CD640 /* jiudian （酒店） */ = {
+			isa = PBXGroup;
+			children = (
+				04F43ACB1BE1FA2E0004CF74 /* JiuDian.plist */,
+				042854721BE0CB60004CD640 /* JiuDianTableViewController.h */,
+				042854731BE0CB60004CD640 /* JiuDianTableViewController.m */,
+				0428546D1BE0CB60004CD640 /* JiuDian.h */,
+				0428546E1BE0CB60004CD640 /* JiuDian.m */,
+				0428546F1BE0CB60004CD640 /* JiuDianTableViewCell.h */,
+				042854701BE0CB60004CD640 /* JiuDianTableViewCell.m */,
+				042854711BE0CB60004CD640 /* JiuDianTableViewCell.xib */,
+			);
+			name = "jiudian （酒店）";
 			sourceTree = "<group>";
 		};
 		046F70FC1BDF15510047AC8C /* hotelDetailed (酒店详情) */ = {
@@ -316,9 +345,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042854761BE0CB60004CD640 /* JiuDianTableViewCell.xib in Resources */,
 				042854591BE095B9004CD640 /* FoodCellView.xib in Resources */,
 				04F5CFBD1BDE19C50095CA0B /* LingShanView.xib in Resources */,
 				04A581311BDA34B70041D32F /* Main.storyboard in Resources */,
+				04F43ACC1BE1FA2E0004CF74 /* JiuDian.plist in Resources */,
 				0404EDF01BD4DE8600801A82 /* LaunchScreen.xib in Resources */,
 				04F5CFC41BDE20FC0095CA0B /* LSHotel.plist in Resources */,
 				0404EDED1BD4DE8600801A82 /* Images.xcassets in Resources */,
@@ -342,6 +373,9 @@
 			files = (
 				0428545C1BE098E7004CD640 /* Food.m in Sources */,
 				04F5CFBB1BDE199A0095CA0B /* LingShanView.m in Sources */,
+				042854771BE0CB60004CD640 /* JiuDianTableViewController.m in Sources */,
+				042854741BE0CB60004CD640 /* JiuDian.m in Sources */,
+				042854751BE0CB60004CD640 /* JiuDianTableViewCell.m in Sources */,
 				046F70FB1BDF15460047AC8C /* hotelDetailedViewController.m in Sources */,
 				04F5CFC21BDE20D30095CA0B /* LingShan.m in Sources */,
 				0498B7A81BDF99C70008433C /* SetViewController.m in Sources */,

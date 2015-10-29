@@ -45,7 +45,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60M-Be-Zmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="-761"/>
+            <point key="canvasLocation" x="517" y="-745"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="egk-XQ-IdJ">
@@ -74,10 +74,13 @@
                                         <rect key="frame" x="0.0" y="136" width="320" height="76"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS2-s8-djm">
-                                                <rect key="frame" x="98" y="13" width="50" height="50"/>
+                                                <rect key="frame" x="102" y="13" width="50" height="50"/>
                                                 <state key="normal" image="酒店">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="AZz-iz-SM2" kind="push" id="gkk-CX-a0i"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuK-Fx-ZWv">
                                                 <rect key="frame" x="242" y="13" width="50" height="50"/>
@@ -95,7 +98,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqi-wR-t5I">
-                                                <rect key="frame" x="172" y="13" width="50" height="50"/>
+                                                <rect key="frame" x="175" y="13" width="50" height="50"/>
                                                 <state key="normal" image="商场">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -217,6 +220,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fO0-Ut-xv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1493" y="-657"/>
+        </scene>
+        <!--Jiu Dian Table View Controller-->
+        <scene sceneID="sB7-hS-eNJ">
+            <objects>
+                <tableViewController id="AZz-iz-SM2" customClass="JiuDianTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rzU-U6-UYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Cfk-gB-ckf">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cfk-gB-ckf" id="XW5-6W-HCF">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AZz-iz-SM2" id="CeZ-0c-H6v"/>
+                            <outlet property="delegate" destination="AZz-iz-SM2" id="Eqi-QI-AQy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xiX-HM-cHb"/>
+                    <connections>
+                        <outlet property="jiuDianTableView" destination="rzU-U6-UYZ" id="Frr-An-EQt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJR-jv-atN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="11"/>
         </scene>
         <!--Hotel Detailed View Controller-->
         <scene sceneID="lmZ-ug-mmC">
